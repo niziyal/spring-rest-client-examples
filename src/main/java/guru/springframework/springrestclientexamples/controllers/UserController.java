@@ -12,10 +12,10 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Created by jt on 9/22/17.
  */
-@Slf4j
+//@Slf4j
 @Controller
 public class UserController {
-
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(Object.class);
     private ApiService apiService;
 
     public UserController(ApiService apiService) {

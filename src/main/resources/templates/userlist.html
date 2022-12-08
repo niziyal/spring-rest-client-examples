@@ -32,37 +32,29 @@
                         <table class="table table-hover ">
                             <thead class="thead-inverse">
                             <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Gender</th>
+                                <th>Name</th>
                                 <th>Email</th>
-                                <th>Language</th>
                                 <th>Phone</th>
+                                <th>Company</th>
                             </tr>
                             </thead>
                             <tr th:remove="all">
-                                <td>Joe</td>
-                                <td>Buck</td>
-                                <td>Male</td>
-                                <td>foo@example.com</td>
-                                <td>English</td>
-                                <td>132-123-1234</td>
+                                <td>Leanne Graham</td>
+                                <td>Sincere@april.biz</td>
+                                <td>1-770-736-8031 x56442</td>
+                                <td>Romaguera-Crona</td>
                             </tr>
                             <tr th:remove="all">
-                                <td>Joe</td>
-                                <td>Buck</td>
-                                <td>Male</td>
-                                <td>foo@example.com</td>
-                                <td>English</td>
-                                <td>132-123-1234</td>
+                                <td>Ervin Howell</td>
+                                <td>Shanna@melissa.tv</td>
+                                <td>010-692-6593 x09125</td>
+                                <td>Deckow-Crist</td>
                             </tr>
                             <tr th:each="user : ${users}">
-                                <td th:text="${user.name.first}">Joe</td>
-                                <td th:text="${user.name.last}">Buck</td>
-                                <td th:text="${user.gender}">Male</td>
+                                <td th:text="${user.name}">Joe Buck</td>
                                 <td th:text="${user.email}">foo@example.com</td>
-                                <td th:text="${user.language}">English</td>
                                 <td th:text="${user.phone}">132-123-1234</td>
+                                <td th:text="${user.company.name}">Romaguera-Crona/td>
                             </tr>
                         </table>
                     </div>
