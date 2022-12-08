@@ -1,11 +1,12 @@
 package guru.springframework.api.domain;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Address {
+public class Address implements Serializable {
 
     private String street;
     private String suite;

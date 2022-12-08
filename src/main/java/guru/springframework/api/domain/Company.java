@@ -1,12 +1,13 @@
 
 package guru.springframework.api.domain;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Company {
+public class Company implements Serializable {
 
     private String name;
     private String catchPhrase;

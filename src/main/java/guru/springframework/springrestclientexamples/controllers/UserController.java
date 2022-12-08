@@ -12,10 +12,10 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Created by jt on 9/22/17.
  */
-@Slf4j
+//@Slf4j
 @Controller
 public class UserController {
-
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(Object.class);
     private ApiService apiService;
 
     public UserController(ApiService apiService) {
@@ -34,10 +34,10 @@ public class UserController {
 
         Integer limit = new Integer(map.get("limit").get(0));
 
-        //log.debug("Received Limit value: " + limit);
+        log.debug("Received Limit value: " + limit);
         //default if null or zero
         if(limit == null || limit == 0){
-            //log.debug("Setting limit to default of 10");
+            log.debug("Setting limit to default of 10");
             limit = 10;
         }
 
